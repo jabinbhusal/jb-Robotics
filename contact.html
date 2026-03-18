@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="websit.css">
+    <title>Contact - J&B Robotics</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header class="top">
+        <div class="logo">
+            <img src="J&B Robotics.jpg" alt="J&B Robotics Logo">
+        </div>
+
+        <nav class="topleft">
+            <p onclick="window.location.href='index.html'">Home</p>
+            <p onclick="window.location.href='index.html'">Our Clients</p>
+            <p onclick="window.location.href='index.html'">Our Services</p>
+        </nav>
+        
+        <nav class="topright">
+            <p>Contact Us</p>
+            <p onclick="window.location.href='index.html'">Our Team</p>
+        </nav>
+    </header>
+
+    <main class="contact-page">
+        <section class="contact-section">
+            <h1>Contact Us</h1>
+            <p>Send us a message and we'll get back to you as soon as possible.</p>
+
+            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="1b333748-46d5-4643-a900-963f69385dfe">
+                <label for="name">Full Name</label>
+                <input id="name" name="name" type="text" required placeholder="Your name">
+
+                <label for="service">Service Needed</label>
+                <select id="service" name="service" required>
+                    <option value="" disabled selected>Select a service</option>
+                    <option value="automation">Automation & Robotics</option>
+                    <option value="training">Training & Workshops</option>
+                    <option value="consulting">AI & Process Consulting</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="phone">Phone Number</label>
+                <input id="phone" name="phone" type="tel" required placeholder="+977 your phone number">
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell us what you need..." required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="last">
+        <p class="copyright">© 2026 J&B Robotics | All Rights Reserved</p>
+        <div class="social">
+            <a href="https://www.instagram.com/jb_robotics" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61550954575927" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook" aria-hidden="true"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
