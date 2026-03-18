@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="github/websit.css">
+    <link rel="stylesheet" href="websit.css">
     <title>J&B Robotics | Innovating the Future</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <script>
 window.addEventListener("scroll", function() {
@@ -20,25 +21,25 @@ window.addEventListener("scroll", function() {
 <body>
     <header class="top">
         <div class="logo">
-            <img src="github/J&B Robotics.jpg" alt="J&B Robotics Logo">
+            <img src="J&B Robotics.jpg" alt="J&B Robotics Logo">
         </div>
 
         <nav class="topleft">
             <p onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Home</p>
-            <!-- <p>About</p> -->
+            <p onclick="document.getElementsByClassName('all-clients')[0].scrollIntoView({behavior: 'smooth'})">Our Clients</p>
             <!-- <p>Projects</p> -->
             <p onclick="document.getElementsByClassName('section')[0].scrollIntoView({behavior: 'smooth'})">Our Services</p>
         </nav>
         
         <nav class="topright">
-            <!-- <p>Contact Us</p> -->
+            <a href="contact.html" style="text-decoration:none; color:black;">Contact Us</a>
             <p onclick="document.getElementsByClassName('team-section')[0].scrollIntoView({behavior: 'smooth'})">Our Team</p>
         </nav>
     </header>
 
     <main class="video-container">
         <video autoplay muted loop id="video">
-            <source src="github/workshop.mp4" type="video/mp4">
+            <source src="workshop.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         
@@ -66,12 +67,12 @@ window.addEventListener("scroll", function() {
         <h2>Meet Our Team</h2>
         <div class="team-cards">
             <a class="team-member" href="https://www.linkedin.com/in/jabin-bhusal-bb310138b" target="_blank" style="text-decoration:none;">
-                <img src="github/jabin.png" alt="Co-Founder">
+                <img src="jabin.png" alt="Co-Founder">
                 <h3>Jabin Bhusal</h3>
                 <p>Co-Founder||Circuit Designer</p>
             </a>
             <a class="team-member" href="https://www.linkedin.com/in/bipin-bashyal-201512343/" target="_blank" style="text-decoration:none;">
-                <img src="github/biralo.jpeg" alt="Co-Founder">
+                <img src="biralo.jpeg" alt="Co-Founder">
                 <h3>Bipin Bashyal</h3>
                 <p>Co-Founder||Programming Sector</p>
             </a>
@@ -81,23 +82,30 @@ window.addEventListener("scroll", function() {
     <h2 style="text-align: center;">Our Satisfied Clients</h2>
     <div class="all-clients">
         <div class="client">
-            <img src="github/environment.webp" alt="Client 1">
+            <img src="environment.webp" alt="Client 1">
             <p>New Environment English Secondary School</p>
         </div>
         <div class="client">
-            <img src="github/paramount.webp" alt="Client 2">
+            <img src="paramount.webp" alt="Client 2">
             <p>Paramount Boarding High School</p>
         </div>
         <div class="client">
-            <img src="github/elido.webp" alt="Client 3">
+            <img src="elido.webp" alt="Client 3">
             <p>Elido Technology</p>
         </div>
     </div>
 
 
     <footer class="last">
-        <p style="text-align:center; color:#555; margin:0;background-color: antiquewhite;
-        height:30px;padding:10px">© 2026 J&B Robotics | All Rights Reserved</p>
+        <p class="copyright">© 2026 J&B Robotics | All Rights Reserved</p>
+        <div class="social">
+            <a href="https://www.instagram.com/jb_robotics" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61550954575927" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook" aria-hidden="true"></i>
+            </a>
+        </div>
     </footer>
 
 </body>
